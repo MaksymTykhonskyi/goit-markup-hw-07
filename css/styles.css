@@ -363,18 +363,19 @@ body{
   margin-top: -30px;
 }
 
+.staff-list-content{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
 .list-item-staff{
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--page-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.staff-list-content{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 35px;
-  margin-right: 35px;
 }
 
 .title-list{
@@ -460,6 +461,9 @@ body{
   transition: fill 250ms linear, border 250ms linear;
 }
 
+.client-list:not(:last-child){
+  margin-right: 30px;
+}
 
 .client-list .icon-link:hover, 
 .client-list .icon-link:focus{
