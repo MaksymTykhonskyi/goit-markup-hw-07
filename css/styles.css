@@ -348,6 +348,15 @@ body{
   background-color:  #F5F4FA;;
 }
 
+.text-work{
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--text-color); 
+  margin-bottom: 16px;
+}
+
+
 .list-staff{
   display: flex;
   margin-left: -30px;
@@ -416,13 +425,7 @@ body{
   margin-left: 70px;
 }
 
-.text-work{
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  color: var(--text-color); 
-  margin-bottom: 16px;
-}
+
                           /* END team */
 
                    /* section Regular customers */
