@@ -26,14 +26,17 @@
     border: 1px solid #afb1b8;
     fill: #afb1b8;
     transition: fill 250ms linear, border 250ms linear;
-  }
+
+    
+  .client-list &:hover, 
+  .client-list &:focus{
+    fill: var(--accent-color);
+    border: 1px solid #2196F3;
+    }
+}
   
   .client-list:not(:last-child){
     margin-right: 30px;
   }
   
-  .client-list .icon-link:hover, 
-  .client-list .icon-link:focus{
-    fill: var(--accent-color);
-    border: 1px solid #2196F3;
-  }
+  

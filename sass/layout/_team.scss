@@ -50,17 +50,14 @@
     background-color: transparent;
     border-radius: 50%;
     transition:color 250ms linear, background-color 250ms linear ;
-  }
-  
-  .social-list-link:hover,
-  .social-list-link:focus{
+
+    &:hover,
+    &:focus{
     background-color: var(--accent-color);
+    }
   }
   
-  .social-list-link:hover .social-list-icon,
-  .social-list-link:focus .social-list-icon {
-    fill: var(--page-color);
-  }
+  
   
   .social-list{
     display: flex;
@@ -72,7 +69,12 @@
     height: 20px;
     fill: #AFB1B8;
     transition: fill 250ms linear;
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--page-color);
   }
+}
   
   .social-footer{
     display: block;
