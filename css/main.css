@@ -63,10 +63,6 @@ body {
   padding-bottom: 94px;
 }
 
-.section-heading {
-  padding-bottom: 94px;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -107,9 +103,8 @@ body {
   align-items: center;
 }
 
-.social {
+.menu {
   display: flex;
-  align-items: center;
 }
 
 .menu-item:not(:last-child) {
@@ -157,7 +152,7 @@ body {
   margin-left: auto;
 }
 
-.social__contact-links {
+.social-links {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -168,18 +163,18 @@ body {
   transition: color 250ms linear;
 }
 
-.social__contact-links:hover, .social__contact-links:focus {
+.social-links:hover, .social-links:focus {
   color: var(--accent-color);
 }
 
-.social__contact-links .social__contact-links {
+.icon-header {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--text-color);
   transition: fill 250ms linear;
 }
 
-.social__contact-links:hover .social__contact-links,
-.social__contact-links:focus .social__contact-links {
+.social-links:hover .icon-header,
+.social-links:focus .icon-header {
   fill: var(--accent-color);
 }
 
@@ -199,7 +194,7 @@ body {
 .hero__description {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -231,18 +226,18 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.features {
+.features__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.features-text {
+.features__item {
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.icon-bd {
+.features__icon-bd {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -252,12 +247,12 @@ body {
   align-items: center;
 }
 
-.icon {
+.features__icon {
   width: 70px;
   height: 70px;
 }
 
-.title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -265,13 +260,17 @@ body {
   text-transform: uppercase;
 }
 
-.text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
 }
 
-.heading {
+.about {
+  padding-bottom: 94px;
+}
+
+.about__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -279,23 +278,23 @@ body {
   margin-bottom: 50px;
 }
 
-.item {
+.about__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.work-item {
+.about__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.item {
+.about__item {
   position: relative;
 }
 
-.item-list-wrapper {
+.about__item-heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -314,6 +313,14 @@ body {
 
 .staff {
   background-color: #F5F4FA;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .text-work {
@@ -576,7 +583,7 @@ body {
   margin-left: 10px;
 }
 
-.title-list-card {
+.portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -585,41 +592,41 @@ body {
   margin-bottom: 10px;
 }
 
-.text-list {
+.portfolio__label {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
 }
 
-.card-list {
+.portfolio__content {
   padding: 20px 24px;
   border-left: 1px solid var(--lines-for-frame);
   border-bottom: 1px solid var(--lines-for-frame);
   border-right: 1px solid var(--lines-for-frame);
 }
 
-.card-set {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.card {
+.portfolio__card {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.link-img {
+.portfolio__link-img {
   display: block;
 }
 
-.link-img:hover, .link-img:focus {
+.portfolio__link-img:hover, .portfolio__link-img:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.overlay {
+.portfolio__text {
   font-size: 18px;
   line-height: 1.55;
   position: absolute;
@@ -635,18 +642,18 @@ body {
   transition: transform 250ms linear, opacity 250ms linear;
 }
 
-.link-img:hover .overlay,
-.link-img:focus .overlay {
+.portfolio__link-img:hover .portfolio__text,
+.portfolio__link-img:focus .portfolio__text {
   opacity: 1;
   transform: translateY(0%);
 }
 
-.team-list-img-wrapper {
+.portfolio__description {
   position: relative;
   overflow: hidden;
 }
 
-.button-list {
+.button__button {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -659,19 +666,19 @@ body {
   transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 
-.button-list:hover, .button-list:focus {
+.button__button:hover, .button__button:focus {
   background-color: var(--accent-color);
   color: var(--page-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.list-button-list {
+.button__list {
   display: flex;
   justify-content: center;
   margin: 0 0 50px 0;
 }
 
-.button-title:not(:last-child) {
+.button__title:not(:last-child) {
   margin-right: 8px;
 }
 

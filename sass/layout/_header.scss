@@ -30,9 +30,13 @@
       align-items: center;
     }
   
-  .social {
+  // .social {
+  //     display: flex;
+  //     align-items: center;
+  //   }
+
+    .menu{
       display: flex;
-      align-items: center;
     }
   .menu-item:not(:last-child){
     margin-right: 50px;    
@@ -85,7 +89,7 @@
   
   
   
-  .social__contact-links{
+  .social-links{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -95,20 +99,23 @@
     display: inline-flex; 
     transition: color 250ms linear;
     
-
     &:hover,
     &:focus{
     color: var(--accent-color);
     }
-
-  .social__contact-links{
+  } 
+  
+  
+    
+  
+  .icon-header{
     margin-right: 10px;
-    fill: #757575;;
+    fill: var(--text-color);
     transition: fill 250ms linear;
-  }
-    .social__contact-links:hover &,
-  .social__contact-links:focus &{
+
+  .social-links:hover &,
+  .social-links:focus &{
     fill: var(--accent-color);
-    }
   }
+    }
   
