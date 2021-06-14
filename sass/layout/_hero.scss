@@ -1,4 +1,4 @@
-.section-background{
+.hero{
     background: var(--background-color);
     padding-top:200px;
     padding-bottom: 200px;  
@@ -14,7 +14,7 @@
     margin-right: auto;
   }
   
-  .description{
+  .hero__description{
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -25,7 +25,7 @@
     margin-bottom: 30px;
   }
   
-  .button{
+  .hero__button{
     background: var(--accent-color);
     font-family: inherit;
     font-weight: 700;
